@@ -50,17 +50,19 @@ public class TestListaNumeros
 
     public static void testAdd(ListaNumeros lista) {
         int[] valores = {21, -5, 28, -7, 28, 77, 77, -17, 21, 15, 28, 28, 77};
+        //int[] valores = {21, -5, 28, -7, 77};
+        //int[] valores = {77, 21};
+        //int[] valores = {21};
+        //int[] valores = {21, 21, 21, 21};
         for (int i = 0; i < valores.length; i++) {
             lista.addElemento(valores[i]);
         }
 
     }
 
-
     public static void testToString(ListaNumeros lista) {
         System.out.println(lista.toString());
     }
-
 
     public static void testSegundoMaximo(ListaNumeros lista) {        
         int segundo = lista.segundoMaximo();
